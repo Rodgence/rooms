@@ -19,9 +19,9 @@ class Booking extends Model
         'status'
     ];
 
-    protected $dates = [
-        'check_in',
-        'check_out'
+    protected $casts = [
+        'check_in' => 'date',
+        'check_out' => 'date'
     ];
 
     public function room()

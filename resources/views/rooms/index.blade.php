@@ -26,7 +26,7 @@
                         <h2 class="text-xl font-semibold text-gray-900">{{ $room->name }}</h2>
                         <p class="text-sm text-gray-500">{{ $room->type }}</p>
                     </div>
-                    <span class="text-lg font-bold text-indigo-600">${{ number_format($room->price, 2) }}<span class="text-sm font-normal text-gray-500">/night</span></span>
+                    <span class="text-lg font-bold text-[#196890]">${{ number_format($room->price, 2) }}<span class="text-sm font-normal text-gray-500">/night</span></span>
                 </div>
                 
                 <div class="mt-3 flex items-center text-sm text-gray-600">
@@ -37,7 +37,7 @@
                 </div>
                 
                 <div class="mt-4">
-                    <a href="{{ route('rooms.show', $room->id) }}" class="w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700 transition-colors duration-300 text-center inline-block">
+                    <a href="{{ route('rooms.show', $room->id) }}" class="w-full bg-[#196890] text-white py-2 px-4 rounded-md hover:bg-[#145570] transition-colors duration-300 text-center inline-block">
                         View Details
                     </a>
                 </div>
@@ -48,4 +48,3 @@
 
 {{ $rooms->links() }}
 @endsection
->>>>>>> REPLACE
