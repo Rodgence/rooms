@@ -75,4 +75,20 @@ class AdminController extends Controller
         return redirect()->route('admin.bookings')
             ->with('success', 'Booking deleted successfully.');
     }
+
+    /**
+     * Display a listing of customers.
+     */
+    public function customers()
+    {
+        $customers = Booking::select('email', 'full_name', 'phone')
+            ->selectRaw('COUNT(*) as total_bookings')
+            ->selectRaw('SUM(total_price) as total_spent')
+            ->selectRaw('MAX(created_at) as last_booking')
+            ->groupBy('email', 'full_name', 'phone')
+            ->orderByDesc('last_booking')
+            ->paginate(15);
+        
+        return view('admin.customers.index', compact('customers'));
+    }
 }

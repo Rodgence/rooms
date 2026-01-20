@@ -34,4 +34,6 @@ Route::middleware(['auth'])->group(function () {
     Route::put('/admin/bookings/{id}/approve', [AdminController::class, 'approveBooking'])->name('admin.bookings.approve');
     Route::put('/admin/bookings/{id}/cancel', [AdminController::class, 'cancelBooking'])->name('admin.bookings.cancel');
     Route::delete('/admin/bookings/{id}', [AdminController::class, 'deleteBooking'])->name('admin.bookings.delete');
+    
+    Route::get('/admin/customers', [AdminController::class, 'customers'])->name('admin.customers');
 });
