@@ -53,7 +53,7 @@ class BookingController extends Controller
         Mail::to($request->email)->send(new BookingConfirmation($booking));
         
         // Send notification email to admin
-        Mail::to(config('mail.admin_email', 'admin@example.com'))->send(new NewBookingAlert($booking));
+        Mail::to(config('mail.admin_email'))->send(new NewBookingAlert($booking));
 
         return redirect()->route('booking.success', $booking->id)
             ->with('success', 'Your booking has been submitted successfully!');
