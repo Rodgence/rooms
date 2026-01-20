@@ -276,12 +276,12 @@
             <h4>📱 Send Payment Receipt via WhatsApp</h4>
             <p>After making your payment, please send a photo of your receipt via WhatsApp:</p>
             <p style="text-align: center; margin: 15px 0;">
-                <a href="https://wa.me/255714791904?text=Hello%2C%20I%20have%20made%20a%20payment%20for%20booking%20%23{{ $booking->id }}%20and%20would%20like%20to%20send%20my%20receipt." class="whatsapp-btn">
+                <a href="https://wa.me/255677743686?text=Hello%2C%20I%20have%20made%20a%20payment%20for%20booking%20%23{{ $booking->id }}%20and%20would%20like%20to%20send%20my%20receipt." class="whatsapp-btn">
                     Send Receipt on WhatsApp
                 </a>
             </p>
             <p style="text-align: center; font-size: 14px; color: #6b7280;">
-                Or message us directly at: <span style="user-select: all; font-weight: bold;">+255 714 791 904</span>
+                Or message us directly at: <span style="user-select: all; font-weight: bold;">+255 677 743 686</span>
             </p>
         </div>
         
