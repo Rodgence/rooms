@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Booking;
 use App\Models\Room;
+use App\Models\User;
 
 class AdminController extends Controller
 {
@@ -90,5 +91,14 @@ class AdminController extends Controller
             ->paginate(15);
         
         return view('admin.customers.index', compact('customers'));
+    }
+
+    /**
+     * Display a listing of all users.
+     */
+    public function users()
+    {
+        $users = User::orderBy('created_at', 'desc')->paginate(15);
+        return view('admin.users.index', compact('users'));
     }
 }
