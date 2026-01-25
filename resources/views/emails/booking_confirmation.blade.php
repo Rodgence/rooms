@@ -14,7 +14,7 @@
             padding: 20px;
         }
         .header {
-            background-color: #4f46e5;
+            background-color: #196890;
             color: white;
             padding: 20px;
             text-align: center;
@@ -94,35 +94,6 @@
         .account-box td:first-child {
             font-weight: bold;
             width: 40%;
-            color: #6b7280;
-        }
-        .note {
-            background-color: #fef3c7;
-            padding: 10px 15px;
-            border-radius: 5px;
-            border-left: 4px solid #f59e0b;
-            margin-top: 15px;
-        }
-        .contact-box {
-            background-color: #f0fdf4;
-            padding: 15px;
-            border-radius: 5px;
-            margin: 20px 0;
-            border: 1px solid #bbf7d0;
-        }
-        .contact-box h4 {
-            margin-top: 0;
-            color: #047857;
-        }
-        .contact-box table {
-            width: 100%;
-        }
-        .contact-box td {
-            padding: 5px 0;
-        }
-        .contact-box td:first-child {
-            font-weight: bold;
-            width: 30%;
             color: #6b7280;
         }
         .whatsapp-box {
@@ -246,30 +217,6 @@
                 </table>
             </div>
             
-            <p class="note"><strong>Note:</strong> You are suggested to make some deposits for your account activation: <strong>150,000 TZS</strong> or <strong>150 USD</strong></p>
-        </div>
-        
-        <div class="contact-box">
-            <h4>Need Assistance?</h4>
-            <p>Contact our Sales and Support Officer:</p>
-            <table>
-                <tr>
-                    <td>Name:</td>
-                    <td>Nassor Ali</td>
-                </tr>
-                <tr>
-                    <td>Branch:</td>
-                    <td>Zanzibar Branch</td>
-                </tr>
-                <tr>
-                    <td>Mobile:</td>
-                    <td style="user-select: all;">255773494985</td>
-                </tr>
-                <tr>
-                    <td>Ext No:</td>
-                    <td style="user-select: all;">23508</td>
-                </tr>
-            </table>
         </div>
         
         <div class="whatsapp-box">
